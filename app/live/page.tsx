@@ -8,7 +8,7 @@ const container = "max-w-5xl mx-auto px-4 sm:px-6 lg:px-8";
 
 export default function LivePage() {
   return (
-    <div className="bg-background text-surface">
+    <div className="bg-background text-ink">
       <section className="pt-24 pb-16">
         <div className={container}>
           <motion.div {...fadeUp} className="space-y-4">
@@ -38,7 +38,7 @@ export default function LivePage() {
                 </p>
                 <a
                   href="https://instagram.com/"
-                  className="mt-4 inline-flex items-center gap-2 rounded-xl bg-primary text-background px-5 py-2 text-sm font-semibold hover:bg-primary/80"
+                  className="mt-4 inline-flex items-center gap-2 rounded-xl bg-primary text-surface px-5 py-2 text-sm font-semibold hover:bg-primary/80"
                 >
                   Watch stories <Instagram className="h-4 w-4" />
                 </a>

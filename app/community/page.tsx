@@ -8,7 +8,7 @@ const container = "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8";
 
 export default function CommunityPage() {
   return (
-    <div className="bg-background text-surface">
+    <div className="bg-background text-ink">
       <section className="pt-24 pb-12">
         <div className={container}>
           <motion.div {...fadeUp} className="max-w-3xl space-y-4">
@@ -24,30 +24,30 @@ export default function CommunityPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div
               {...fadeUp}
-              className="rounded-3xl bg-surface/10 ring-1 ring-primary/20 p-10 space-y-4 text-background"
+              className="rounded-3xl bg-surface/10 ring-1 ring-primary/20 p-10 space-y-4 text-ink"
             >
               <div className="inline-flex items-center gap-2 text-sm uppercase tracking-wide text-primary">
                 <Download className="h-4 w-4" /> Digital drop
               </div>
-              <h2 className="text-2xl font-semibold text-surface">Download the media kit</h2>
-              <p className="opacity-80 text-sm text-surface/90">
+              <h2 className="text-2xl font-semibold text-ink">Download the media kit</h2>
+              <p className="opacity-80 text-sm text-ink/90">
                 Logos, typography, and overlays to make your recap reel pop. Perfect for Strava posts, Instagram stories, and YouTube thumbnails.
               </p>
               <a
                 href="/downloads/media-kit.zip"
-                className="inline-flex items-center gap-2 rounded-xl bg-primary text-background px-5 py-3 text-sm font-semibold hover:bg-primary/80"
+                className="inline-flex items-center gap-2 rounded-xl bg-primary text-surface px-5 py-3 text-sm font-semibold hover:bg-primary/80"
               >
                 Media kit <Download className="h-4 w-4" />
               </a>
             </motion.div>
             <motion.div
               {...fadeUp}
-              className="rounded-3xl bg-surface/10 ring-1 ring-primary/20 p-10 space-y-6 text-background"
+              className="rounded-3xl bg-surface/10 ring-1 ring-primary/20 p-10 space-y-6 text-ink"
             >
               <div className="inline-flex items-center gap-2 text-sm uppercase tracking-wide text-primary">
                 <Trophy className="h-4 w-4" /> Monthly spotlight
               </div>
-              <p className="opacity-80 text-sm text-surface/90">
+              <p className="opacity-80 text-sm text-ink/90">
                 Submit your photos and trip notes using <span className="text-primary font-semibold">#fernwehriders</span>. Every month we pick a standout ride to feature in our newsletter and YouTube community post.
               </p>
               <a

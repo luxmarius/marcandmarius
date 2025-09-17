@@ -19,7 +19,7 @@ export default function ResourceCard({ item }: { item: Resource }) {
     <motion.a
       {...fadeUp}
       href={item.href}
-      className="group rounded-2xl bg-surface ring-1 ring-primary/20 p-6 hover:ring-primary/40 transition block text-background"
+      className="group rounded-2xl bg-surface ring-1 ring-primary/20 p-6 hover:ring-primary/40 transition block text-ink"
     >
       <div className="flex items-center gap-3">
         <Icon className="h-6 w-6 text-primary" />

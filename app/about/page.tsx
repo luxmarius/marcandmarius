@@ -8,7 +8,7 @@ const container = "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8";
 
 export default function AboutPage() {
   return (
-    <div className="bg-background text-surface">
+    <div className="bg-background text-ink">
       <section className="pt-24 pb-16">
         <div className={container}>
           <motion.div {...fadeUp} className="max-w-3xl space-y-4">
@@ -19,24 +19,24 @@ export default function AboutPage() {
           </motion.div>
         </div>
       </section>
-      <section className="py-20 bg-surface text-background">
+      <section className="py-20 bg-surface text-ink">
         <div className={container}>
           <motion.div {...fadeUp} className="grid md:grid-cols-3 gap-8">
-            <div className="rounded-3xl bg-background text-surface p-8 space-y-4 ring-1 ring-primary/20">
+            <div className="rounded-3xl bg-deep text-surface p-8 space-y-4 ring-1 ring-primary/20">
               <Mountain className="h-6 w-6 text-primary" />
               <h2 className="text-xl font-semibold">Alpine DNA</h2>
               <p className="text-sm opacity-70">
                 From Munich to Lake Garda, the Alps are our training ground. We obsess over gradients, weather windows, and mid-climb espresso stops.
               </p>
             </div>
-            <div className="rounded-3xl bg-background text-surface p-8 space-y-4 ring-1 ring-primary/20">
+            <div className="rounded-3xl bg-deep text-surface p-8 space-y-4 ring-1 ring-primary/20">
               <Camera className="h-6 w-6 text-primary" />
               <h2 className="text-xl font-semibold">Story-first films</h2>
               <p className="text-sm opacity-70">
                 Each tour becomes a short film and route guide. We break down logistics, where to sleep, and how to capture your own ride.
               </p>
             </div>
-            <div className="rounded-3xl bg-background text-surface p-8 space-y-4 ring-1 ring-primary/20">
+            <div className="rounded-3xl bg-deep text-surface p-8 space-y-4 ring-1 ring-primary/20">
               <Coffee className="h-6 w-6 text-primary" />
               <h2 className="text-xl font-semibold">Community fuel</h2>
               <p className="text-sm opacity-70">

@@ -8,7 +8,7 @@ import { fadeUp } from "./animations";
 
 function Stat({ icon: Icon, label, value }: { icon: typeof Route; label: string; value: string | number }) {
   return (
-    <div className="flex items-center gap-3 text-background">
+    <div className="flex items-center gap-3 text-ink">
       <Icon className="h-5 w-5 text-primary" />
       <div className="text-sm">{label}</div>
       <div className="ml-auto font-semibold">{value}</div>
@@ -20,10 +20,10 @@ export default function TourCard({ tour }: { tour: Tour }) {
   return (
     <motion.div
       {...fadeUp}
-      className="group relative overflow-hidden rounded-2xl bg-surface ring-1 ring-primary/20 hover:ring-primary/40 transition text-background"
+      className="group relative overflow-hidden rounded-2xl bg-surface ring-1 ring-primary/20 hover:ring-primary/40 transition text-ink"
     >
       <div className="aspect-[16/10] w-full overflow-hidden">
-        <div className="h-full w-full bg-background/10 grid place-items-center">
+        <div className="h-full w-full bg-deep/10 grid place-items-center">
           <span className="text-sm opacity-60">Image: {tour.thumbnail}</span>
         </div>
       </div>

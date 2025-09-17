@@ -10,7 +10,7 @@ const container = "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8";
 
 export default function ResourcesPage() {
   return (
-    <div className="bg-background text-surface">
+    <div className="bg-background text-ink">
       <section className="pt-24 pb-12">
         <div className={container}>
           <motion.div {...fadeUp} className="space-y-4 max-w-3xl">
@@ -30,21 +30,21 @@ export default function ResourcesPage() {
           </div>
           <motion.div
             {...fadeUp}
-            className="mt-16 rounded-3xl border border-primary/20 bg-surface/5 p-10 text-background"
+            className="mt-16 rounded-3xl border border-primary/20 bg-surface/5 p-10 text-ink"
           >
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="space-y-3">
                 <div className="inline-flex items-center gap-2 text-sm uppercase tracking-wide text-primary">
                   <Download className="h-4 w-4" /> Free starter kit
                 </div>
-                <h2 className="text-2xl font-semibold text-surface">Bikepacking 101 PDF</h2>
-                <p className="opacity-80 text-sm text-surface/90">
+                <h2 className="text-2xl font-semibold text-ink">Bikepacking 101 PDF</h2>
+                <p className="opacity-80 text-sm text-ink/90">
                   A condensed guide covering gear, routing, nutrition, and checklists. Perfect if you love frameworks.
                 </p>
               </div>
               <a
                 href="/downloads/bikepacking-starter-kit.pdf"
-                className="inline-flex items-center gap-2 rounded-xl bg-primary text-background px-5 py-3 text-sm font-semibold hover:bg-primary/80"
+                className="inline-flex items-center gap-2 rounded-xl bg-primary text-surface px-5 py-3 text-sm font-semibold hover:bg-primary/80"
               >
                 Grab it <FileText className="h-4 w-4" />
               </a>

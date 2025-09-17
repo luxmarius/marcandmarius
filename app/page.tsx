@@ -12,10 +12,10 @@ const container = "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8";
 export default function HomePage() {
   return (
     <div className="space-y-0">
-      <section className="relative min-h-[92vh] grid place-items-center overflow-hidden bg-background text-surface">
+      <section className="relative min-h-[92vh] grid place-items-center overflow-hidden bg-background text-ink">
         <div className="absolute inset-0 -z-10">
           <div className="h-full w-full bg-[url('/images/hero.jpg')] bg-cover bg-center" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/60 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-deep/70 via-deep/40 to-background" />
         </div>
         <motion.div {...fadeUp} className={`${container} text-center pt-24 pb-16`}>
           <div className="mx-auto max-w-3xl">
@@ -41,7 +41,7 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      <section id="tours" className="py-20 bg-surface text-background">
+      <section id="tours" className="py-20 bg-surface text-ink">
         <div className={container}>
           <motion.div {...fadeUp} className="flex items-end justify-between gap-4">
             <div>
@@ -65,7 +65,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="about" className="py-24 relative overflow-hidden bg-background text-surface">
+      <section id="about" className="py-24 relative overflow-hidden bg-background text-ink">
         <div className="absolute inset-0 -z-10 opacity-30">
           <div className="h-full w-full bg-[radial-gradient(60%_40%_at_50%_0%,rgba(49,170,163,0.1),transparent)]" />
         </div>
@@ -102,7 +102,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="live" className="py-24 bg-surface text-background">
+      <section id="live" className="py-24 bg-surface text-ink">
         <div className={container}>
           <motion.div {...fadeUp} className="flex items-end justify-between gap-4">
             <div>
@@ -132,7 +132,7 @@ export default function HomePage() {
                 <PlayCircle className="h-5 w-5 text-primary" />
                 <h3 className="font-semibold">Latest Reel</h3>
               </div>
-              <div id="showreel" className="mt-4 aspect-video w-full rounded-xl bg-background/60 grid place-items-center text-surface">
+              <div id="showreel" className="mt-4 aspect-video w-full rounded-xl bg-deep/20 grid place-items-center text-ink">
                 <span className="opacity-60 text-sm">Embed Instagram / video player</span>
               </div>
               <a
@@ -162,7 +162,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="community" className="py-24 bg-surface text-background">
+      <section id="community" className="py-24 bg-surface text-ink">
         <div className={container}>
           <motion.div {...fadeUp} className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
@@ -211,7 +211,7 @@ export default function HomePage() {
                   type="email"
                   required
                   placeholder="you@email.com"
-                  className="flex-1 rounded-xl bg-background border border-primary/20 px-4 py-3 text-surface placeholder-surface/70 outline-none focus:border-primary/40"
+                  className="flex-1 rounded-xl bg-background border border-primary/20 px-4 py-3 text-ink placeholder-deep/40 outline-none focus:border-primary/40"
                 />
                 <button
                   type="submit"

@@ -10,8 +10,8 @@ const container = "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8";
 
 export default function ToursPage() {
   return (
-    <div className="bg-background text-surface">
-      <section className="py-24 bg-gradient-to-b from-background to-background/60">
+    <div className="bg-background text-ink">
+      <section className="py-24 bg-gradient-to-b from-deep/80 via-deep/40 to-background">
         <div className={container}>
           <motion.div {...fadeUp} className="max-w-3xl space-y-5">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs uppercase tracking-wider text-primary">
@@ -24,7 +24,7 @@ export default function ToursPage() {
           </motion.div>
         </div>
       </section>
-      <section className="py-16 bg-surface text-background">
+      <section className="py-16 bg-surface text-ink">
         <div className={container}>
           <motion.div {...fadeUp} className="flex items-center justify-between gap-4">
             <h2 className="text-2xl font-semibold">Signature bikepacking routes</h2>
@@ -38,14 +38,14 @@ export default function ToursPage() {
               <TourCard key={tour.id} tour={tour} />
             ))}
           </div>
-          <motion.div {...fadeUp} className="mt-16 rounded-3xl border border-primary/20 bg-background text-surface p-10">
+          <motion.div {...fadeUp} className="mt-16 rounded-3xl border border-primary/20 bg-background text-ink p-10">
             <h3 className="text-2xl font-semibold">Need a bespoke route?</h3>
             <p className="mt-3 opacity-80">
               We can help you adapt these rides to your timeframe, budget, and stoke level. From one-day gravel escapes to two-week odysseys.
             </p>
             <a
               href="mailto:hello@fernwehriders.com"
-              className="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary text-background px-5 py-3 text-sm font-semibold hover:bg-primary/80"
+              className="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary text-surface px-5 py-3 text-sm font-semibold hover:bg-primary/80"
             >
               Say hi <ArrowRight className="h-4 w-4" />
             </a>
