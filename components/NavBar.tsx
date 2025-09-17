@@ -19,7 +19,7 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <div className="fixed top-0 inset-x-0 z-40 backdrop-blur bg-background/80 border-b border-primary/20 text-ink">
+    <div className="fixed top-0 inset-x-0 z-40 backdrop-blur bg-background/80 text-ink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3">
         <Link href="/" className="flex items-center">
           <span className={`${brandFont.className} text-lg tracking-wide`}>marcandmarius</span>

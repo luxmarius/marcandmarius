@@ -13,12 +13,21 @@ const container = "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8";
 export default function HomePage() {
   return (
     <div className="space-y-0">
-      <section className="relative min-h-[92vh] grid place-items-center overflow-hidden bg-background text-ink">
-        <div className="absolute inset-0 -z-10">
-          <div className="h-full w-full bg-[url('/images/hero.jpg')] bg-cover bg-center" />
-          <div className="absolute inset-0 bg-gradient-to-b from-deep/70 via-deep/40 to-background" />
+      <section className="relative min-h-[92vh] grid place-items-center overflow-hidden bg-background text-surface">
+        <div className="absolute inset-0 overflow-hidden">
+          <video
+            className="h-full w-full object-cover"
+            src="/images/reel_small.mov"
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/images/hero.jpg"
+            aria-hidden
+          />
+          <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/70 via-black/50 to-background/80" />
         </div>
-        <motion.div {...fadeUp} className={`${container} text-center pt-24 pb-16`}>
+        <motion.div {...fadeUp} className={`${container} relative z-20 text-center pt-24 pb-16`}>
           <div className="mx-auto max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs uppercase tracking-wider text-primary">
               <Compass className="h-4 w-4" /> Two friends • Seven years • Countless roads
