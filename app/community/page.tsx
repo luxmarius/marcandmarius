@@ -14,7 +14,7 @@ export default function CommunityPage() {
           <motion.div {...fadeUp} className="max-w-3xl space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold">Ride it. Remix it. Share it.</h1>
             <p className="text-lg opacity-80">
-              The Fernweh community is where our routes come to life. Tag your rides, submit photos, and we’ll shout you out in the monthly spotlight.
+              The marcandmarius community is where our routes come to life. Tag your rides, submit photos, and we’ll shout you out in the monthly spotlight.
             </p>
           </motion.div>
         </div>
@@ -48,10 +48,10 @@ export default function CommunityPage() {
                 <Trophy className="h-4 w-4" /> Monthly spotlight
               </div>
               <p className="opacity-80 text-sm text-ink/90">
-                Submit your photos and trip notes using <span className="text-primary font-semibold">#fernwehriders</span>. Every month we pick a standout ride to feature in our newsletter and YouTube community post.
+                Submit your photos and trip notes using <span className="text-primary font-semibold">#marcandmarius</span>. Every month we pick a standout ride to feature in our newsletter and YouTube community post.
               </p>
               <a
-                href="mailto:hello@fernwehriders.com"
+                href="mailto:hello@marcandmarius.com"
                 className="inline-flex items-center gap-2 rounded-xl border border-primary/40 px-5 py-3 text-sm font-semibold hover:bg-primary/10"
               >
                 Email your story <Users className="h-4 w-4" />

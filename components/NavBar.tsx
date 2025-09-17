@@ -20,7 +20,7 @@ export default function NavBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3">
         <Link href="/" className="flex items-center gap-2">
           <Bike className="h-6 w-6 text-primary" />
-          <span className="font-bold tracking-wide">Fernweh Riders</span>
+          <span className="text-lg font-semibold tracking-wide lowercase">marcandmarius</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           {links.map((link) => {

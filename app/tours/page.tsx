@@ -44,7 +44,7 @@ export default function ToursPage() {
               We can help you adapt these rides to your timeframe, budget, and stoke level. From one-day gravel escapes to two-week odysseys.
             </p>
             <a
-              href="mailto:hello@fernwehriders.com"
+              href="mailto:hello@marcandmarius.com"
               className="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary text-surface px-5 py-3 text-sm font-semibold hover:bg-primary/80"
             >
               Say hi <ArrowRight className="h-4 w-4" />

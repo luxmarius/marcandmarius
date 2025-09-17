@@ -1,6 +1,6 @@
-# Fernweh Riders
+# marcandmarius
 
-A multi-page Next.js site for showcasing cinematic bike adventures, curated resources, and community stories. Built with the App Router, TypeScript, Tailwind CSS, and Framer Motion.
+A multi-page Next.js site for showcasing marcandmarius bike adventures, curated resources, and community stories. Built with the App Router, TypeScript, Tailwind CSS, and Framer Motion.
 
 ## Getting started
 

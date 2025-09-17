@@ -14,7 +14,7 @@ export default function AboutPage() {
           <motion.div {...fadeUp} className="max-w-3xl space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold">We ride slow, document everything, and share the blueprint.</h1>
             <p className="text-lg opacity-80">
-              Fernweh Riders started as a pact between Marc and Marius: once a year, drop work, pack the bikes, and chase a new line across a mountain range.
+              marcandmarius started as a pact between Marc and Marius: once a year, drop work, pack the bikes, and chase a new line across a mountain range.
             </p>
           </motion.div>
         </div>
