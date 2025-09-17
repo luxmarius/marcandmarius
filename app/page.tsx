@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { ArrowRight, Compass, Play, Instagram, ExternalLink, Mountain, Download, PlayCircle, Users, Mail } from "lucide-react";
 import TourCard from "../components/TourCard";
 import ResourceCard from "../components/ResourceCard";
@@ -31,7 +32,9 @@ export default function HomePage() {
                 Explore Tours <ArrowRight className="h-5 w-5" />
               </a>
               <a
-                href="#showreel"
+                href="https://www.youtube.com/watch?v=gqi_x4IFKJ4"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-2xl border border-primary/40 px-6 py-3 hover:bg-primary/10"
               >
                 <Play className="h-5 w-5 text-primary" /> Watch Showreel
@@ -94,9 +97,16 @@ export default function HomePage() {
             </motion.div>
             <motion.div
               {...fadeUp}
-              className="rounded-3xl overflow-hidden ring-1 ring-primary/20 bg-surface/10 min-h-[320px] grid place-items-center"
+              className="relative rounded-3xl overflow-hidden ring-1 ring-primary/20 bg-surface/10 min-h-[320px]"
             >
-              <span className="opacity-60 text-sm">Add portraits / behind-the-scenes collage here</span>
+              <Image
+                src="/images/about-us.jpg"
+                alt="Marc and Marius taking a break during a ride"
+                fill
+                className="object-cover"
+                sizes="(min-width: 768px) 50vw, 100vw"
+                priority
+              />
             </motion.div>
           </div>
         </div>
@@ -132,9 +142,15 @@ export default function HomePage() {
                 <PlayCircle className="h-5 w-5 text-primary" />
                 <h3 className="font-semibold">Latest Reel</h3>
               </div>
-              <div id="showreel" className="mt-4 aspect-video w-full rounded-xl bg-deep/20 grid place-items-center text-ink">
-                <span className="opacity-60 text-sm">Embed Instagram / video player</span>
-              </div>
+              <a
+                id="showreel"
+                href="https://www.youtube.com/watch?v=gqi_x4IFKJ4"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-4 block aspect-video w-full rounded-xl bg-deep/20 grid place-items-center text-ink hover:bg-deep/30 transition"
+              >
+                <span className="opacity-60 text-sm">Watch the showreel on YouTube</span>
+              </a>
               <a
                 href="https://instagram.com/"
                 className="mt-4 inline-flex items-center gap-2 text-sm opacity-80 hover:opacity-100 text-primary"
