@@ -2,7 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bike, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
+import { Delius } from "next/font/google";
+
+const brandFont = Delius({ weight: "400", subsets: ["latin"] });
 
 const links = [
   { href: "/tours", label: "Tours" },
@@ -18,9 +21,8 @@ export default function NavBar() {
   return (
     <div className="fixed top-0 inset-x-0 z-40 backdrop-blur bg-background/80 border-b border-primary/20 text-ink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3">
-        <Link href="/" className="flex items-center gap-2">
-          <Bike className="h-6 w-6 text-primary" />
-          <span className="text-lg font-semibold tracking-wide lowercase">marcandmarius</span>
+        <Link href="/" className="flex items-center">
+          <span className={`${brandFont.className} text-lg tracking-wide`}>marcandmarius</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm">
           {links.map((link) => {
